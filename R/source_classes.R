@@ -79,7 +79,7 @@ projection_source <- R6::R6Class(
       cat(crayon::bold("Season data:\t  "), self$min_week == 0, "\n")
       cat(crayon::bold("Weekly data:\t  "), self$max_week > 0, "\n")
       cat(crayon::bold("Post season data: "), self$max_week >  17, "\n")
-      cat(crayon::bold("Sesaon positions: "), paste(self$season_pos, collapse = ", "), "\n")
+      cat(crayon::bold("Season positions: "), paste(self$season_pos, collapse = ", "), "\n")
       cat(crayon::bold("Weekly positions: "), paste(self$week_pos, collapse = ", "), "\n")
     },
     get_url = function(season, week = NULL, position , ...){
